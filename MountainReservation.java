@@ -314,7 +314,7 @@ public class MountainReservation {
         Path path = FileSystems.getDefault().getPath(filePath);
         MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path);
     }
-
+// 아래는 공공데이터에서 산불 위험도를 받아오는 코드입니다. 공공데이터 기술 문서를 참고하였으며, 직접 신청하여 받아온 서비스키를 이용합니다.  
     private static List<JsonObject> getDistricts(String date, String analDateTime) {
         List<JsonObject> districts = new ArrayList<>();
         try {
