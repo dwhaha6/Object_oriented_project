@@ -300,9 +300,9 @@ public class MountainReservation {
         String fileName = "entry_" + userName + ".png";
         try {
             generateQRCode(qrData, fileName);
-            System.out.println("✅ QR 코드 생성 완료! 파일명: " + fileName);
+            System.out.println("QR 코드 생성 완료! 파일명: " + fileName);
         } catch (Exception e) {
-            System.out.println("❌ QR 코드 생성 오류: " + e.getMessage());
+            System.out.println("QR 코드 생성 오류: " + e.getMessage());
         }
     }
 
